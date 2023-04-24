@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { prices } from '../data/materialsPrice';
 
 const Form = () => {
   const roofMaterials = [
@@ -57,6 +58,7 @@ const Form = () => {
     e.preventDefault();
     console.log(formValues);
     setFormValues(initialValues);
+	console.log(prices)
   }
 
   function handleChange(e: any) {
