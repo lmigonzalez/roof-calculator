@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { prices } from '../data/materialsPrice';
-
+import { states } from '../data/states';
 const Form = () => {
   const roofMaterials = [
     {
@@ -42,6 +42,8 @@ const Form = () => {
   ];
 
   const initialValues = {
+    state: 'Alabama',
+    dimensions: '0',
     roofMaterial: 'shingles',
     subMaterial: 'corrugated',
     newGutters: 'yes',
@@ -58,7 +60,7 @@ const Form = () => {
     e.preventDefault();
     console.log(formValues);
     setFormValues(initialValues);
-	console.log(prices)
+    console.log(prices);
   }
 
   function handleChange(e: any) {
@@ -70,7 +72,41 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="">
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+        <div className="flex flex-col w-full md:w-1/2">
+          <label htmlFor="state">State</label>
+          <select
+            className="select h-10 px-2 text-blue-500 border-[1px] border-gray-400 rounded-md"
+            name="state"
+            id="state"
+            value={formValues.state}
+            onChange={handleChange}
+          >
+            {states.map((item, index) => {
+              return (
+                <option key={index} value={item}>
+                  {item}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+
+        <div className="flex flex-col w-full md:w-1/2">
+          <label htmlFor="subMaterial">Roof Dimension</label>
+          <input
+            className="h-10 px-2 text-blue-500 border-[1px] border-gray-400 rounded-md"
+            type="text"
+            name="dimensions"
+            id="dimensions"
+            value={formValues.dimensions}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+
       {/* first row */}
+
       <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
         <div className="flex flex-col w-full md:w-1/2">
           <label htmlFor="roofMaterial">Roof material</label>
