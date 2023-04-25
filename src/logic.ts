@@ -23,8 +23,8 @@ function mapMaterialPrice(...tiles: tile[])
 }
 
 function loadMaterial(state: string, material: string): material {
-    const ste = state as keyof typeof prices;      
-    return { name: material, price: Object.entries(prices[ste]).find((item)=> item[0]===material)?.[1] as number}
+    const ste = state as keyof typeof pric;      
+    return { name: material, price: Object.entries(pric[ste]).find((item)=> item[0]===material)?.[1] as number}
 }
 
 function loadTile(material: material, mesure: number): tile {    
