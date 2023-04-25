@@ -8,14 +8,7 @@ function App() {
   const [finalValue, setFinalValue] = useState(0);
 
   function getFinalValue(value: formValuesTypes) {
-    setFinalValue(
-      Calculate(
-        value.roofMaterial,
-        parseInt(value.dimensions),
-        value.state,
-        value.subMaterial
-      )
-    );
+    setFinalValue(Calculate(value));
     setShowResult(true);
   }
 

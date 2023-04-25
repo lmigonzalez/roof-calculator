@@ -38,20 +38,38 @@ function loadTile(material: material, mesure: number): tile {
     return laborPrice[ste].average()
 }
 
-export function Calculate(material: string, dim: number, state: string,submaterial:string) {
+export function Calculate( value: {state: string,
+    dimensions: string,
+    roofMaterial: string,
+    subMaterial: string,
+    newGutters: string,
+    oldRoof: string,
+    stories: string,
+    skylights: string,
+    vents: string,
+    dormers: string}) {
     
-    const mat = loadMaterial(material,submaterial);
-    //  console.log(mat)
-    const tile = { mesure: 1, material: mat, price: 0 } as tile
-    // console.log(tile)
+    const dim = parseFloat(value.dimensions);
+    const old = parseFloat(value.oldRoof);
+    const vent = parseFloat(value.vents);
+    const sky = parseFloat(value.skylights);
+    const dorm = parseFloat(value.dormers);
+    const stor = parseFloat(value.stories); 
+    const gutt = parseFloat(value.newGutters)
+    console.log(value.newGutters)
+    const mat = loadMaterial(value.roofMaterial, value.subMaterial);    
+    const tile = { mesure: 1, material: mat, price: 0 } as tile 
     const tiles:tile[] = []
     for (let index = 0; index < dim; index++) {        
        tiles.push(tile)
     }    
     
     mapMaterialPrice(...tiles)
-    // console.log(tiles)
-    // console.log(tilesSum(...tiles))
-   
-    return tilesSum(...tiles) + loadAverageLaborPrice(state)*dim
+    //  console.log(tiles)
+    console.log(tilesSum(...tiles))
+
+    const result = (tilesSum(...tiles) + loadAverageLaborPrice(value.state)*dim + old*dim + vent*935 + gutt*10*Math.sqrt(dim) + sky*2500 + dorm*10000)*(stor===0?1:stor*(3 / 2))
+   console.log(result)
+    
+    return result
 }
