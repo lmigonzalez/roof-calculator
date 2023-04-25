@@ -1,352 +1,352 @@
 export const prices = {
-  "Alabama": {
-    "shingles": 2.90,
-    "tiles": 4.85,
-    "metal": 4.10,
-    "fibre glass": 3.30,
-    "fibre cement": 3.70
+  Alabama: {
+    shingles: 2.9,
+    tiles: 4.85,
+    metal: 4.1,
+    "fibre glass": 3.3,
+    "fibre cement": 3.7,
   },
-  "Alaska": {
-    "shingles": 3.30,
-    "tiles": 5.25,
-    "metal": 4.50,
+  Alaska: {
+    shingles: 3.3,
+    tiles: 5.25,
+    metal: 4.5,
     "fibre glass": 3.85,
-    "fibre cement": 4.35
+    "fibre cement": 4.35,
   },
-  "Arizona": {
-    "shingles": 3.05,
-    "tiles": 5.05,
-    "metal": 3.90,
+  Arizona: {
+    shingles: 3.05,
+    tiles: 5.05,
+    metal: 3.9,
     "fibre glass": 3.15,
-    "fibre cement": 3.55
+    "fibre cement": 3.55,
   },
-  "Arkansas": {
-    "shingles": 2.75,
-    "tiles": 4.65,
-    "metal": 3.90,
+  Arkansas: {
+    shingles: 2.75,
+    tiles: 4.65,
+    metal: 3.9,
     "fibre glass": 3.05,
-    "fibre cement": 3.45
+    "fibre cement": 3.45,
   },
-  "California": {
-    "shingles": 3.60,
-    "tiles": 5.95,
-    "metal": 4.75,
+  California: {
+    shingles: 3.6,
+    tiles: 5.95,
+    metal: 4.75,
     "fibre glass": 3.85,
-    "fibre cement": 4.30
+    "fibre cement": 4.3,
   },
-  "Colorado": {
-    "shingles": 3.35,
-    "tiles": 5.70,
-    "metal": 4.55,
+  Colorado: {
+    shingles: 3.35,
+    tiles: 5.7,
+    metal: 4.55,
     "fibre glass": 3.65,
-    "fibre cement": 4.10
+    "fibre cement": 4.1,
   },
-  "Connecticut": {
-    "shingles": 3.35,
-    "tiles": 5.75,
-    "metal": 4.55,
-    "fibre glass": 3.60,
-    "fibre cement": 4.05
+  Connecticut: {
+    shingles: 3.35,
+    tiles: 5.75,
+    metal: 4.55,
+    "fibre glass": 3.6,
+    "fibre cement": 4.05,
   },
-  "Delaware": {
-    "shingles": 3.00,
-    "tiles": 5.00,
-    "metal": 4.10,
-    "fibre glass": 3.30,
-    "fibre cement": 3.70
+  Delaware: {
+    shingles: 3.0,
+    tiles: 5.0,
+    metal: 4.1,
+    "fibre glass": 3.3,
+    "fibre cement": 3.7,
   },
-  "Florida": {
-    "shingles": 3.05,
-    "tiles": 5.15,
-    "metal": 4.35,
+  Florida: {
+    shingles: 3.05,
+    tiles: 5.15,
+    metal: 4.35,
     "fibre glass": 3.45,
-    "fibre cement": 3.85
+    "fibre cement": 3.85,
   },
-  "Georgia": {
-    "shingles":31.2,
-    "tiles": 4.75,
-    "metal": 3.75,
-    "fibre glass": 3.50,
-    "fibre cement": 4.25
+  Georgia: {
+    shingles: 31.2,
+    tiles: 4.75,
+    metal: 3.75,
+    "fibre glass": 3.5,
+    "fibre cement": 4.25,
   },
-  "Hawaii": {
-    "shingles": 4.25,
-    "tiles": 6.25,
-    "metal": 5.00,
-    "fibre glass": 4.50,
-    "fibre cement": 5.50
+  Hawaii: {
+    shingles: 4.25,
+    tiles: 6.25,
+    metal: 5.0,
+    "fibre glass": 4.5,
+    "fibre cement": 5.5,
   },
-  "Idaho": {
-    "shingles": 3.50,
-    "tiles": 5.25,
-    "metal": 4.25,
+  Idaho: {
+    shingles: 3.5,
+    tiles: 5.25,
+    metal: 4.25,
     "fibre glass": 3.75,
-    "fibre cement": 4.50
+    "fibre cement": 4.5,
   },
-  "Illinois": {
-    "shingles": 3.75,
-    "tiles": 5.50,
-    "metal": 4.25,
-    "fibre glass": 4.00,
-    "fibre cement": 4.75
+  Illinois: {
+    shingles: 3.75,
+    tiles: 5.5,
+    metal: 4.25,
+    "fibre glass": 4.0,
+    "fibre cement": 4.75,
   },
-  "Indiana": {
-    "shingles": 3.50,
-    "tiles": 5.25,
-    "metal": 4.00,
+  Indiana: {
+    shingles: 3.5,
+    tiles: 5.25,
+    metal: 4.0,
     "fibre glass": 3.75,
-    "fibre cement": 4.50
+    "fibre cement": 4.5,
   },
-  "Iowa": {
-    "shingles": 3.75,
-    "tiles": 5.50,
-    "metal": 4.25,
-    "fibre glass": 4.00,
-    "fibre cement": 4.75
+  Iowa: {
+    shingles: 3.75,
+    tiles: 5.5,
+    metal: 4.25,
+    "fibre glass": 4.0,
+    "fibre cement": 4.75,
   },
-  "Kansas": {
-    "shingles": 3.50,
-    "tiles": 5.25,
-    "metal": 4.00,
+  Kansas: {
+    shingles: 3.5,
+    tiles: 5.25,
+    metal: 4.0,
     "fibre glass": 3.75,
-    "fibre cement": 4.50
+    "fibre cement": 4.5,
   },
-  "Kentucky": {
-    "shingles": 3.50,
-    "tiles": 5.25,
-    "metal": 4.00,
+  Kentucky: {
+    shingles: 3.5,
+    tiles: 5.25,
+    metal: 4.0,
     "fibre glass": 3.75,
-    "fibre cement": 4.50
+    "fibre cement": 4.5,
   },
-  "Louisiana": {
-    "shingles": 3.75,
-    "tiles": 5.50,
-    "metal": 4.25,
-    "fibre glass": 4.00,
-    "fibre cement": 4.75
+  Louisiana: {
+    shingles: 3.75,
+    tiles: 5.5,
+    metal: 4.25,
+    "fibre glass": 4.0,
+    "fibre cement": 4.75,
   },
-  "Maine": {
-    "shingles": 4.00,
-    "tiles": 5.75,
-    "metal": 4.50,
+  Maine: {
+    shingles: 4.0,
+    tiles: 5.75,
+    metal: 4.5,
     "fibre glass": 4.25,
-    "fibre cement": 5.00
+    "fibre cement": 5.0,
   },
-  "Maryland": {
-    "shingles": 3.75,
-    "tiles": 5.50,
-    "metal": 4.25,
-    "fibre glass": 4.00,
-    "fibre cement": 4.75
+  Maryland: {
+    shingles: 3.75,
+    tiles: 5.5,
+    metal: 4.25,
+    "fibre glass": 4.0,
+    "fibre cement": 4.75,
   },
-  "Massachusetts": {
-    "Shingles": 2.15,
-    "Tiles": 5.75,
-    "Metal": 3.75,
-    "Fiberglass": 295,
-    "Fibre cement": 3.85
+  Massachusetts: {
+    Shingles: 2.15,
+    Tiles: 5.75,
+    Metal: 3.75,
+    Fiberglass: 295,
+    "Fibre cement": 3.85,
   },
-  "Michigan": {
-    "Shingles": 2.30,
-    "Tiles": 6.50,
-    "Metal": 4.20,
-    "Fiberglass": 315,
-    "Fibre cement": 3.95
+  Michigan: {
+    Shingles: 2.3,
+    Tiles: 6.5,
+    Metal: 4.2,
+    Fiberglass: 315,
+    "Fibre cement": 3.95,
   },
-  "Minnesota": {
-    "Shingles": 1.95,
-    "Tiles": 5.75,
-    "Metal": 3.80,
-    "Fiberglass": 290,
-    "Fibre cement": 3.60
+  Minnesota: {
+    Shingles: 1.95,
+    Tiles: 5.75,
+    Metal: 3.8,
+    Fiberglass: 290,
+    "Fibre cement": 3.6,
   },
-  "Mississippi": {
-    "Shingles": 1.95,
-    "Tiles": 5.40,
-    "Metal": 3.40,
-    "Fiberglass": 265,
-    "Fibre cement": 3.40
+  Mississippi: {
+    Shingles: 1.95,
+    Tiles: 5.4,
+    Metal: 3.4,
+    Fiberglass: 265,
+    "Fibre cement": 3.4,
   },
-  "Missouri": {
-    "Shingles": 2.00,
-    "Tiles": 5.50,
-    "Metal": 3.65,
-    "Fiberglass": 285,
-    "Fibre cement": 3.65
+  Missouri: {
+    Shingles: 2.0,
+    Tiles: 5.5,
+    Metal: 3.65,
+    Fiberglass: 285,
+    "Fibre cement": 3.65,
   },
-  "Montana": {
-    "Shingles": 2.10,
-    "Tiles": 6.50,
-    "Metal": 4.00,
-    "Fiberglass": 300,
-    "Fibre cement": 3.80
+  Montana: {
+    Shingles: 2.1,
+    Tiles: 6.5,
+    Metal: 4.0,
+    Fiberglass: 300,
+    "Fibre cement": 3.8,
   },
-  "Nebraska": {
-    "Shingles": 1.95,
-    "Tiles": 5.95,
-    "Metal": 3.90,
-    "Fiberglass": 295,
-    "Fibre cement": 3.75
+  Nebraska: {
+    Shingles: 1.95,
+    Tiles: 5.95,
+    Metal: 3.9,
+    Fiberglass: 295,
+    "Fibre cement": 3.75,
   },
-  "Nevada": {
-    "Shingles": 2.20,
-    "Tiles": 6.50,
-    "Metal": 4.25,
-    "Fiberglass": 320,
-    "Fibre cement": 4.05
+  Nevada: {
+    Shingles: 2.2,
+    Tiles: 6.5,
+    Metal: 4.25,
+    Fiberglass: 320,
+    "Fibre cement": 4.05,
   },
   "New Hampshire": {
-    "Shingles": 2.20,
-    "Tiles": 6.25,
-    "Metal": 4.00,
-    "Fiberglass": 310,
-    "Fibre cement": 3.90
+    Shingles: 2.2,
+    Tiles: 6.25,
+    Metal: 4.0,
+    Fiberglass: 310,
+    "Fibre cement": 3.9,
   },
   "New Jersey": {
-    "shingles": 2.90,
-    "tiles": 4.72,
-    "metal": 4.24,
+    shingles: 2.9,
+    tiles: 4.72,
+    metal: 4.24,
     "fibre glass": 2.96,
-    "fibre cement": 3.68
+    "fibre cement": 3.68,
   },
   "New Mexico": {
-    "shingles": 2.77,
-    "tiles": 4.25,
-    "metal": 3.85,
+    shingles: 2.77,
+    tiles: 4.25,
+    metal: 3.85,
     "fibre glass": 2.82,
-    "fibre cement": 3.53
+    "fibre cement": 3.53,
   },
   "New York": {
-    "shingles": 3.03,
-    "tiles": 4.97,
-    "metal": 4.46,
+    shingles: 3.03,
+    tiles: 4.97,
+    metal: 4.46,
     "fibre glass": 3.11,
-    "fibre cement": 3.87
+    "fibre cement": 3.87,
   },
   "North Carolina": {
-    "shingles": 2.74,
-    "tiles": 4.56,
-    "metal": 4.11,
+    shingles: 2.74,
+    tiles: 4.56,
+    metal: 4.11,
     "fibre glass": 2.86,
-    "fibre cement": 3.57
+    "fibre cement": 3.57,
   },
   "North Dakota": {
-    "shingles": 2.76,
-    "tiles": 4.58,
-    "metal": 4.13,
+    shingles: 2.76,
+    tiles: 4.58,
+    metal: 4.13,
     "fibre glass": 2.88,
-    "fibre cement": 3.60
+    "fibre cement": 3.6,
   },
-  "Ohio": {
-    "shingles": 2.78,
-    "tiles": 4.59,
-    "metal": 4.14,
+  Ohio: {
+    shingles: 2.78,
+    tiles: 4.59,
+    metal: 4.14,
     "fibre glass": 2.88,
-    "fibre cement": 3.58
+    "fibre cement": 3.58,
   },
-  "Oklahoma": {
-    "shingles": 2.67,
-    "tiles": 4.45,
-    "metal": 4.02,
+  Oklahoma: {
+    shingles: 2.67,
+    tiles: 4.45,
+    metal: 4.02,
     "fibre glass": 2.79,
-    "fibre cement": 3.50
+    "fibre cement": 3.5,
   },
-  "Oregon": {
-    "shingles": 3.07,
-    "tiles": 4.99,
-    "metal": 4.48,
+  Oregon: {
+    shingles: 3.07,
+    tiles: 4.99,
+    metal: 4.48,
     "fibre glass": 3.12,
-    "fibre cement": 3.89
+    "fibre cement": 3.89,
   },
-  "Pennsylvania": {
-    "shingles": 3.20,
-    "tiles": 5.80,
-    "metal": 4.50,
-    "fibre glass": 3.50,
-    "fibre cement": 4.00
+  Pennsylvania: {
+    shingles: 3.2,
+    tiles: 5.8,
+    metal: 4.5,
+    "fibre glass": 3.5,
+    "fibre cement": 4.0,
   },
   "Rhode Island": {
-    "shingles": 3.50,
-    "tiles": 6.20,
-    "metal": 4.80,
-    "fibre glass": 3.80,
-    "fibre cement": 4.20
+    shingles: 3.5,
+    tiles: 6.2,
+    metal: 4.8,
+    "fibre glass": 3.8,
+    "fibre cement": 4.2,
   },
   "South Carolina": {
-    "shingles": 2.90,
-    "tiles": 5.30,
-    "metal": 4.20,
-    "fibre glass": 3.20,
-    "fibre cement": 3.70
+    shingles: 2.9,
+    tiles: 5.3,
+    metal: 4.2,
+    "fibre glass": 3.2,
+    "fibre cement": 3.7,
   },
   "South Dakota": {
-    "shingles": 2.80,
-    "tiles": 5.10,
-    "metal": 4.00,
-    "fibre glass": 3.00,
-    "fibre cement": 3.60
+    shingles: 2.8,
+    tiles: 5.1,
+    metal: 4.0,
+    "fibre glass": 3.0,
+    "fibre cement": 3.6,
   },
-  "Tennessee": {
-    "shingles": 2.90,
-    "tiles": 5.40,
-    "metal": 4.30,
-    "fibre glass": 3.30,
-    "fibre cement": 3.80
+  Tennessee: {
+    shingles: 2.9,
+    tiles: 5.4,
+    metal: 4.3,
+    "fibre glass": 3.3,
+    "fibre cement": 3.8,
   },
-  "Texas": {
-    "shingles": 3.20,
-    "tiles": 5.90,
-    "metal": 4.60,
-    "fibre glass": 3.60,
-    "fibre cement": 4.10
+  Texas: {
+    shingles: 3.2,
+    tiles: 5.9,
+    metal: 4.6,
+    "fibre glass": 3.6,
+    "fibre cement": 4.1,
   },
-  "Utah": {
-    "shingles": 3.10,
-    "tiles": 5.70,
-    "metal": 4.40,
-    "fibre glass": 3.40,
-    "fibre cement": 3.90
+  Utah: {
+    shingles: 3.1,
+    tiles: 5.7,
+    metal: 4.4,
+    "fibre glass": 3.4,
+    "fibre cement": 3.9,
   },
-  "Vermont": {
-    "shingles": 3.40,
-    "tiles": 6.00,
-    "metal": 4.70,
-    "fibre glass": 3.70,
-    "fibre cement": 4.20
+  Vermont: {
+    shingles: 3.4,
+    tiles: 6.0,
+    metal: 4.7,
+    "fibre glass": 3.7,
+    "fibre cement": 4.2,
   },
-  "Virginia": {
-    "shingles": 2.65,
-    "tiles": 5.50,
-    "metal": 6.20,
+  Virginia: {
+    shingles: 2.65,
+    tiles: 5.5,
+    metal: 6.2,
     "fibre glass": 3.15,
-    "fibre cement": 3.90
+    "fibre cement": 3.9,
   },
-  "Washington": {
-    "shingles": 3.75,
-    "tiles": 6.20,
-    "metal": 7.20,
-    "fibre glass": 3.60,
-    "fibre cement": 4.60
+  Washington: {
+    shingles: 3.75,
+    tiles: 6.2,
+    metal: 7.2,
+    "fibre glass": 3.6,
+    "fibre cement": 4.6,
   },
   "West Virginia": {
-    "shingles": 2.50,
-    "tiles": 5.25,
-    "metal": 5.95,
-    "fibre glass": 3.00,
-    "fibre cement": 3.65
+    shingles: 2.5,
+    tiles: 5.25,
+    metal: 5.95,
+    "fibre glass": 3.0,
+    "fibre cement": 3.65,
   },
-  "Wisconsin": {
-    "shingles": 2.85,
-    "tiles": 5.95,
-    "metal": 6.75,
+  Wisconsin: {
+    shingles: 2.85,
+    tiles: 5.95,
+    metal: 6.75,
     "fibre glass": 3.35,
-    "fibre cement": 4.10
+    "fibre cement": 4.1,
   },
-  "Wyoming": {
-    "shingles": 2.95,
-    "tiles": 6.15,
-    "metal": 6.90,
-    "fibre glass": 3.50,
-    "fibre cement": 4.30
-  }
-}
+  Wyoming: {
+    shingles: 2.95,
+    tiles: 6.15,
+    metal: 6.9,
+    "fibre glass": 3.5,
+    "fibre cement": 4.3,
+  },
+};

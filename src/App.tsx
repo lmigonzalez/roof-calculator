@@ -1,9 +1,11 @@
-import { useState } from 'react';
-import Form from './components/Form';
-import Result from './components/Result';
+import { useState } from "react";
+import Form, { formValuesTypes } from "./components/Form";
+import Result from "./components/Result";
+import { Calculate } from "./logic";
 
 function App() {
   const [showResult, setShowResult] = useState(false);
+  const [finalValue, setFinalValue] = useState(0);
   const [finalValue, setFinalValue] = useState(0);
 
   function getFinalValue(value: number) {
