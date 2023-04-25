@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { prices } from "../data/materialsPrice";
 import { states } from "../data/states";
 import { pric } from "../data/prices";
 
@@ -64,8 +63,8 @@ const Form: React.FC <Props> = ({getValue}) => {
     dimensions: "0",
     roofMaterial: "Shingle",
     subMaterial: "3-Tab",
-    newGutters: "yes",
-    oldRoof: "one-layer",
+    newGutters: "1",
+    oldRoof: "1",
     stories: "1",
     skylights: "0",
     vents: "0",
@@ -86,7 +85,6 @@ const Form: React.FC <Props> = ({getValue}) => {
     e.preventDefault();
     console.log(formValues);
     setFormValues(initialValues);
-    console.log(prices);
 
     getValue(9575)
   }
@@ -187,8 +185,8 @@ const Form: React.FC <Props> = ({getValue}) => {
             value={formValues.newGutters}
             onChange={handleChange}
           >
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
           </select>
         </div>
 
@@ -203,9 +201,9 @@ const Form: React.FC <Props> = ({getValue}) => {
             value={formValues.oldRoof}
             onChange={handleChange}
           >
-            <option value="one-layer">Yes 1 layer</option>
-            <option value="two-layer">Yes 2 layer</option>
-            <option value="no">No</option>
+            <option value="1">Yes 1 layer</option>
+            <option value="2">Yes 2 layer</option>
+            <option value="0">No</option>
           </select>
         </div>
       </div>

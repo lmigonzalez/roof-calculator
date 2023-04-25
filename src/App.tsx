@@ -7,12 +7,9 @@ function App() {
   const [showResult, setShowResult] = useState(false);
   const [finalValue, setFinalValue] = useState(0);
 
-
-  function getFinalValue(value: number) {
-    if (value > 0) {
-      setFinalValue(value);
-      setShowResult(true);
-    }
+  function getFinalValue(value: formValuesTypes) {
+    setFinalValue(Calculate(value));
+    setShowResult(true);
   }
 
   function closeResult() {
