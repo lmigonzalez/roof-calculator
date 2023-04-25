@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { prices } from '../data/materialsPrice';
 import { states } from '../data/states';
-const Form = () => {
+
+interface Props {
+  getValue: (value: number) => void 
+}
+
+const Form: React.FC <Props> = ({getValue}) => {
   const roofMaterials = [
     {
       value: 'shingles',
@@ -61,6 +66,8 @@ const Form = () => {
     console.log(formValues);
     setFormValues(initialValues);
     console.log(prices);
+
+    getValue(9575)
   }
 
   function handleChange(e: any) {
