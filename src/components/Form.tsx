@@ -3,10 +3,10 @@ import { prices } from '../data/materialsPrice';
 import { states } from '../data/states';
 
 interface Props {
-  getValue: (value: number) => void 
+  getValue: (value: number) => void;
 }
 
-const Form: React.FC <Props> = ({getValue}) => {
+const Form: React.FC<Props> = ({ getValue }) => {
   const roofMaterials = [
     {
       value: 'shingles',
@@ -67,7 +67,7 @@ const Form: React.FC <Props> = ({getValue}) => {
     setFormValues(initialValues);
     console.log(prices);
 
-    getValue(9575)
+    getValue(9575);
   }
 
   function handleChange(e: any) {
@@ -241,7 +241,7 @@ const Form: React.FC <Props> = ({getValue}) => {
 
       <button
         type="submit"
-        className="bg-[#AA77FF] h-12 rounded-md w-full text-white font-medium"
+        className="bg-[#AA77FF] h-12 rounded-md w-full text-white font-medium transition-all hover:shadow-xl"
       >
         Calculate Your Estimate
       </button>
