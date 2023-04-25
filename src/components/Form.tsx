@@ -46,8 +46,7 @@ const Form: React.FC<Props> = ({ getValue }) => {
     e.preventDefault();
     console.log(formValues);
     setFormValues(initialValues);
-
-    getValue(formValues);
+    if (parseFloat(formValues.dimensions) > 0) getValue(formValues);
   }
 
   function handleChange(e: any) {
