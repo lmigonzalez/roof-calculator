@@ -1,62 +1,74 @@
-import React, { useState } from 'react';
-import { prices } from '../data/materialsPrice';
-import { states } from '../data/states';
+import React, { useState } from "react";
+import { prices } from "../data/materialsPrice";
+import { states } from "../data/states";
 
 interface Props {
-  getValue: (value: number) => void 
+  getValue: (value: formValuesTypes) => void;
 }
+export type formValuesTypes = {
+  state: string;
+  dimensions: string;
+  roofMaterial: string;
+  subMaterial: string;
+  newGutters: string;
+  oldRoof: string;
+  stories: string;
+  skylights: string;
+  vents: string;
+  dormers: string;
+};
 
-const Form: React.FC <Props> = ({getValue}) => {
+const Form: React.FC<Props> = ({ getValue }) => {
   const roofMaterials = [
     {
-      value: 'shingles',
-      text: 'Shingles',
+      value: "shingles",
+      text: "Shingles",
     },
     {
-      value: 'tiles',
-      text: 'Tiles',
+      value: "tiles",
+      text: "Tiles",
     },
     {
-      value: 'metal',
-      text: 'Metal',
+      value: "metal",
+      text: "Metal",
     },
     {
-      value: 'fibre-glass',
-      text: 'Fibre Glass',
+      value: "fibre-glass",
+      text: "Fibre Glass",
     },
 
     {
-      value: 'fibre-cement',
-      text: 'Fibre Cement',
+      value: "fibre-cement",
+      text: "Fibre Cement",
     },
   ];
 
   const materialSubType = [
     {
-      value: 'corrugated',
-      text: 'Corrugated',
+      value: "corrugated",
+      text: "Corrugated",
     },
     {
-      value: 'shake',
-      text: 'Shake',
+      value: "shake",
+      text: "Shake",
     },
     {
-      value: 'slate',
-      text: 'Slate',
+      value: "slate",
+      text: "Slate",
     },
   ];
 
   const initialValues = {
-    state: 'Alabama',
-    dimensions: '0',
-    roofMaterial: 'shingles',
-    subMaterial: 'corrugated',
-    newGutters: 'yes',
-    oldRoof: 'one-layer',
-    stories: '1',
-    skylights: '0',
-    vents: '0',
-    dormers: '0',
+    state: "Alabama",
+    dimensions: "0",
+    roofMaterial: "shingles",
+    subMaterial: "corrugated",
+    newGutters: "yes",
+    oldRoof: "one-layer",
+    stories: "1",
+    skylights: "0",
+    vents: "0",
+    dormers: "0",
   };
 
   const [formValues, setFormValues] = useState(initialValues);
@@ -67,7 +79,7 @@ const Form: React.FC <Props> = ({getValue}) => {
     setFormValues(initialValues);
     console.log(prices);
 
-    getValue(9575)
+    getValue(formValues);
   }
 
   function handleChange(e: any) {
