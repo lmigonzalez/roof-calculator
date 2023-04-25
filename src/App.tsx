@@ -6,7 +6,7 @@ import { Calculate } from "./logic";
 function App() {
   const [showResult, setShowResult] = useState(false);
   const [finalValue, setFinalValue] = useState(0);
-  const [finalValue, setFinalValue] = useState(0);
+
 
   function getFinalValue(value: number) {
     if (value > 0) {
