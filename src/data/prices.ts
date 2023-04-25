@@ -1,4 +1,4 @@
-const pric = {
+export const pric = {
     tile: {
         "Concrete": 4,
         "Clay":7.5,

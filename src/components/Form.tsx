@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { prices } from "../data/materialsPrice";
 import { states } from "../data/states";
+import { pric } from "../data/prices";
 
 interface Props {
   getValue: (value: formValuesTypes) => void;
@@ -19,50 +20,11 @@ export type formValuesTypes = {
 };
 
 const Form: React.FC<Props> = ({ getValue }) => {
-  const roofMaterials = [
-    {
-      value: "shingles",
-      text: "Shingles",
-    },
-    {
-      value: "tiles",
-      text: "Tiles",
-    },
-    {
-      value: "metal",
-      text: "Metal",
-    },
-    {
-      value: "fibre-glass",
-      text: "Fibre Glass",
-    },
-
-    {
-      value: "fibre-cement",
-      text: "Fibre Cement",
-    },
-  ];
-
-  const materialSubType = [
-    {
-      value: "corrugated",
-      text: "Corrugated",
-    },
-    {
-      value: "shake",
-      text: "Shake",
-    },
-    {
-      value: "slate",
-      text: "Slate",
-    },
-  ];
-
   const initialValues = {
     state: "Alabama",
     dimensions: "0",
-    roofMaterial: "shingles",
-    subMaterial: "corrugated",
+    roofMaterial: "Shingle",
+    subMaterial: "3-Tab",
     newGutters: "yes",
     oldRoof: "one-layer",
     stories: "1",
@@ -72,6 +34,14 @@ const Form: React.FC<Props> = ({ getValue }) => {
   };
 
   const [formValues, setFormValues] = useState(initialValues);
+  const roofMaterials = Object.keys(pric);
+  const matSubType = Object.keys(
+    pric[
+      (formValues.roofMaterial ||
+        initialValues.roofMaterial) as keyof typeof pric
+    ]
+  );
+  console.log(matSubType);
 
   function handleSubmit(e: any) {
     e.preventDefault();
@@ -138,8 +108,8 @@ const Form: React.FC<Props> = ({ getValue }) => {
           >
             {roofMaterials.map((item, index) => {
               return (
-                <option key={index} value={item.value}>
-                  {item.text}
+                <option key={index} value={item}>
+                  {item}
                 </option>
               );
             })}
@@ -155,10 +125,10 @@ const Form: React.FC<Props> = ({ getValue }) => {
             value={formValues.subMaterial}
             onChange={handleChange}
           >
-            {materialSubType.map((item, index) => {
+            {matSubType.map((item, index) => {
               return (
-                <option key={index} value={item.value}>
-                  {item.text}
+                <option key={index} value={item}>
+                  {item}
                 </option>
               );
             })}

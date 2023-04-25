@@ -9,7 +9,12 @@ function App() {
 
   function getFinalValue(value: formValuesTypes) {
     setFinalValue(
-      Calculate(value.roofMaterial, parseInt(value.dimensions), value.state)
+      Calculate(
+        value.roofMaterial,
+        parseInt(value.dimensions),
+        value.state,
+        value.subMaterial
+      )
     );
     setShowResult(true);
   }

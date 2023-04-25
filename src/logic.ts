@@ -1,5 +1,6 @@
 import { laborPrice } from "./data/laborPrice";
 import { prices } from "./data/materialsPrice";
+import { pric } from "./data/prices";
 
 function tilesSum(...tiles: tile[])
 {
@@ -22,9 +23,10 @@ function mapMaterialPrice(...tiles: tile[])
     return tiles.map((tile)=> tile.price=tile.material.price*tile.mesure)
 }
 
-function loadMaterial(state: string, material: string): material {
-    const ste = state as keyof typeof pric;      
-    return { name: material, price: Object.entries(pric[ste]).find((item)=> item[0]===material)?.[1] as number}
+function loadMaterial(material: string, submaterial: string): material {
+    console.log("h", submaterial)
+    const ste = material as keyof typeof pric;
+    return { name: material, price: Object.entries(pric[ste]).find((item)=> item[0]===submaterial)?.[1] as number}
 }
 
 function loadTile(material: material, mesure: number): tile {    
@@ -36,18 +38,20 @@ function loadTile(material: material, mesure: number): tile {
     return laborPrice[ste].average()
 }
 
-export function Calculate(material: string, dim: number, state: string) {
+export function Calculate(material: string, dim: number, state: string,submaterial:string) {
     
-    const mat = loadMaterial(state, material);
-     
+    const mat = loadMaterial(material,submaterial);
+    //  console.log(mat)
     const tile = { mesure: 1, material: mat, price: 0 } as tile
-    console.log(tile)
+    // console.log(tile)
     const tiles:tile[] = []
     for (let index = 0; index < dim; index++) {        
        tiles.push(tile)
     }    
+    
     mapMaterialPrice(...tiles)
-    console.log(tilesSum(...tiles))
+    // console.log(tiles)
+    // console.log(tilesSum(...tiles))
    
     return tilesSum(...tiles) + loadAverageLaborPrice(state)*dim
 }
