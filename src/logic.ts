@@ -28,9 +28,9 @@ function loadMaterial(material: string, submaterial: string): material {
     return { name: material, price: Object.entries(pric[ste]).find((item)=> item[0]===submaterial)?.[1] as number}
 }
 
-function loadTile(material: material, mesure: number): tile {    
-    return {mesure:mesure,material:material,price:material.price}
-}
+// function loadTile(material: material, mesure: number): tile {    
+//     return {mesure:mesure,material:material,price:material.price}
+// }
 
  function loadAverageLaborPrice(state: string) {
     const ste = state as keyof typeof prices; 
