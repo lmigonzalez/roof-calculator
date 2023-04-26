@@ -220,7 +220,7 @@ const Form: React.FC<Props> = ({ getValue }) => {
 
       <button
         type="submit"
-        className="bg-[#AA77FF] h-12 rounded-md w-full text-white font-medium"
+        className="bg-[#0075FF] h-12 rounded-md w-full text-white font-medium"
       >
         Calculate Your Estimate
       </button>
