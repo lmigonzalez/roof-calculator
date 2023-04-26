@@ -14,7 +14,6 @@ function App() {
 
   function closeResult() {
     setShowResult(false);
-    console.log('click');
   }
 
   return (

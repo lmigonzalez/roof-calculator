@@ -24,7 +24,6 @@ function mapMaterialPrice(...tiles: tile[])
 }
 
 function loadMaterial(material: string, submaterial: string): material {
-    console.log("h", submaterial)
     const ste = material as keyof typeof pric;
     return { name: material, price: Object.entries(pric[ste]).find((item)=> item[0]===submaterial)?.[1] as number}
 }
@@ -56,7 +55,7 @@ export function Calculate( value: {state: string,
     const dorm = parseFloat(value.dormers);
     const stor = parseFloat(value.stories); 
     const gutt = parseFloat(value.newGutters)
-    console.log(value.newGutters)
+
     const mat = loadMaterial(value.roofMaterial, value.subMaterial);    
     const tile = { mesure: 1, material: mat, price: 0 } as tile 
     const tiles:tile[] = []
@@ -65,11 +64,8 @@ export function Calculate( value: {state: string,
     }    
     
     mapMaterialPrice(...tiles)
-    //  console.log(tiles)
-    console.log(tilesSum(...tiles))
 
     const result = (tilesSum(...tiles) + loadAverageLaborPrice(value.state)*dim + old*dim + vent*935 + gutt*10*Math.sqrt(dim) + sky*2500 + dorm*10000)*(stor===0?1:stor*(3 / 2))
-   console.log(result)
     
     return result
 }

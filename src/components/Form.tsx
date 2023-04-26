@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { states } from "../data/states";
 import { pric } from "../data/prices";
 
@@ -18,46 +18,7 @@ export type formValuesTypes = {
   dormers: string;
 };
 
-const Form: React.FC <Props> = ({getValue}) => {
-  const roofMaterials = [
-    {
-      value: 'shingles',
-      text: 'Shingles',
-    },
-    {
-      value: 'tiles',
-      text: 'Tiles',
-    },
-    {
-      value: 'metal',
-      text: 'Metal',
-    },
-    {
-      value: 'fibre-glass',
-      text: 'Fibre Glass',
-    },
-
-    {
-      value: 'fibre-cement',
-      text: 'Fibre Cement',
-    },
-  ];
-
-  const materialSubType = [
-    {
-      value: 'corrugated',
-      text: 'Corrugated',
-    },
-    {
-      value: 'shake',
-      text: 'Shake',
-    },
-    {
-      value: 'slate',
-      text: 'Slate',
-    },
-  ];
-
+const Form: React.FC<Props> = ({ getValue }) => {
   const initialValues = {
     state: "Alabama",
     dimensions: "0",
@@ -79,14 +40,14 @@ const Form: React.FC <Props> = ({getValue}) => {
         initialValues.roofMaterial) as keyof typeof pric
     ]
   );
-  console.log(matSubType);
+
 
   function handleSubmit(e: any) {
     e.preventDefault();
-    console.log(formValues);
+
     setFormValues(initialValues);
 
-    getValue(9575)
+    getValue(formValues);
   }
 
   function handleChange(e: any) {
@@ -260,7 +221,7 @@ const Form: React.FC <Props> = ({getValue}) => {
 
       <button
         type="submit"
-        className="bg-[#AA77FF] h-12 rounded-md w-full text-white font-medium transition-all hover:shadow-xl"
+        className="bg-[#AA77FF] h-12 rounded-md w-full text-white font-medium"
       >
         Calculate Your Estimate
       </button>
